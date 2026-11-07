@@ -4,11 +4,11 @@ boton.addEventListener("click", function () {
 
     let frase = window.prompt("Escribe una frase", "hola como estas");
 
-    let frasesinespaciodelantero = frase.trim();
+    let frasesinespacio = frase.trim();
 
-    let arrayfrase = frasesinespaciodelantero.split(" ");
+    let arrayfrase = frasesinespacio.split(" ");
 
     let contador = arrayfrase.length;
 
-    console.log("Hay " + contador + " palabras en esta frase");
+    console.log("Hay " + contador + " palabras en la frase: "+frase);
 });

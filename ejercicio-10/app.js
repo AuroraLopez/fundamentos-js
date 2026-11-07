@@ -5,10 +5,12 @@ function numeromaximo (array){
 
 let array = [1,2,3,4,5]
 
+console.log(array)
 console.log("El número máximo del array es: "+numeromaximo(array))
 
 let arrayNegativos = [-10, -5, -20, -3, -8];
 
+console.log(arrayNegativos)
 console.log(
     "El número máximo del array de negativos es: " +
     numeromaximo(arrayNegativos)

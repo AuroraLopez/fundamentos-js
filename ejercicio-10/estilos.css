@@ -18,22 +18,3 @@ div {
     min-height: 200px;      
     gap: 15px;              
 }
-
-button {
-    padding: 10px 24px;
-    font-size: 16px;
-    cursor: pointer;
-    border: none;
-    border-radius: 6px;
-    background: #bf91ff;
-    color: #fff;
-}
-
-button:hover {
-    background: #9470c7;
-}
-
-#error {
-    color: red;
-    font-weight: bold;
-}

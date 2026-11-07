@@ -2,14 +2,7 @@ const boton = document.getElementById("btn");
 
 function invertirPalabra(palabra) {
 
-    let resultado = palabra.trim().toLowerCase()
-        .replaceAll("á", "a")
-        .replaceAll("é", "e")
-        .replaceAll("í", "i")
-        .replaceAll("ó", "o")
-        .replaceAll("ú", "u");
-
-    let arraypalabra = resultado.split("");
+    let arraypalabra = palabra.split("");
     let arrayinvertido = arraypalabra.reverse();
     let palabrainvertida = arrayinvertido.join("");
 
@@ -23,6 +16,7 @@ boton.addEventListener("click", function () {
 
     let palabrainvertida = invertirPalabra(palabra);
 
+    console.log("La palabra original es: " + palabra);
     console.log(
         "La palabra invertida de " + palabra +
         " es: " + palabrainvertida

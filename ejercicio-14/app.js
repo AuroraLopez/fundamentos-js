@@ -1,14 +1,28 @@
+function normalizarPalabra(palabra) {
+    return palabra.trim().toLowerCase()
+        .replaceAll("á", "a")
+        .replaceAll("é", "e")
+        .replaceAll("í", "i")
+        .replaceAll("ó", "o")
+        .replaceAll("ú", "u");
+}
+
+function invertirPalabra(palabra) {
+    return palabra.split("").reverse().join("");
+}
+
 const boton = document.getElementById("btn");
 
 boton.addEventListener("click", function () {
 
-    let frase = window.prompt("Escribe una frase", "hola como estas");
+    let palabra = window.prompt("Elige una palabra", "hola");
 
-    let frasesinespaciodelantero = frase.trim();
+    let resultado = normalizarPalabra(palabra);
+    let palabrainvertida = invertirPalabra(palabra);
 
-    let arrayfrase = frasesinespaciodelantero.split(" ");
-
-    let contador = arrayfrase.length;
-
-    console.log("Hay " + contador + " palabras en esta frase");
+    if (resultado == palabrainvertida) {
+        console.log("La palabra " + palabra + " es palíndroma.");
+    } else {
+        console.log("La palabra " + palabra + " no es palíndroma.");
+    }
 });
