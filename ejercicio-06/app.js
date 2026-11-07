@@ -3,10 +3,10 @@ const error = document.getElementById("error");
 
 function determinarparoimpar(numero) {
     if (numero % 2 == 0) {
-        console.log("Es un número par")
+        console.log(numero+": Es un número par")
         return;
     }
-    return console.log("Es un número impar")
+    return console.log(numero+": Es un número impar")
 }
 
 boton.addEventListener("click", function () {

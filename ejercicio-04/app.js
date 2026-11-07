@@ -2,13 +2,15 @@ const boton = document.getElementById("btnSuma");
 const error = document.getElementById("error");
 
 boton.addEventListener("click", function () {
-
+    // Guardado de números pedidos por prompt
     let numero1 = window.prompt("Elige un número", 0);
     let numero2 = window.prompt("Elige otro número", 0);
 
+    // Convertimos en números parseandolos
     let num1parseado = Number(numero1);
     let num2parseado = Number(numero2);
 
+    // Condiciones para válidez o operacións
     if (
         numero1.trim() === "" ||
         numero2.trim() === "" ||

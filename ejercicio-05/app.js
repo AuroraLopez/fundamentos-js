@@ -3,10 +3,10 @@ const error = document.getElementById("error");
 
 function determinarparoimpar(numero){
     if(numero%2==0){
-        console.log("Es un número par")
+        console.log(numero+": Es un número par");
         return;
     }
-    return console.log("Es un número impar")
+    return console.log(numero+": Es un número impar");
 }
 
 boton.addEventListener("click", function () {
@@ -15,7 +15,7 @@ boton.addEventListener("click", function () {
 
     let num1parseado = Number(numero);
 
-
+    // Condiciones para la validación de datos o resultado.
     if (
         numero.trim() === "" ||
         Number.isNaN(num1parseado) ||
@@ -24,6 +24,7 @@ boton.addEventListener("click", function () {
         error.textContent = "Error: debes introducir números positivos.";
         console.log("Error: debes introducir números positivos.");
     } else {
-        determinarparoimpar(num1parseado)
+        error.textContent = "";
+        determinarparoimpar(num1parseado);
     }
 });
