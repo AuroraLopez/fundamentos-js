@@ -25,9 +25,12 @@ fundamentos-js/
 - **Productividad**. Inserta plantillas de código mediante abreviaturas. Hemos usado **JavaScript (ES6) Code Snippets**
 - **Control de versiones**. Amplía la información sobre autoría e historial Git. Hemos usado **GitLens**.
 
-## Enunciado Nº3. ¿Cuál es la representación más útil?
+## Ejercicio Nº3. ¿Cuál es la representación más útil?
 
 Para mostrar los datos, depende del tipo de objeto o lo que queramos mostrar:
 - **console.log()** sirve mejor para inspeccionar la estructura completa
 - **console.table()** para visualizar los datos de forma clara y ordenada.
 
+## Ejercicio Nº18. ¿Qué criterio usar si dos palabras tienen el mismo largo?
+
+Principalmente yo he programado que al haber dos palabras del mismo largo en una frase se quede con la primera palabra encontrada.

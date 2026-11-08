@@ -18,5 +18,6 @@ let frase = "Hola me llamo Aurora y vivo en la fuente";
 
 let resultado = palabraMasLarga(frase);
 
-console.log("La palabra más larga es: " + resultado);
-console.log("Su longitud es: " + resultado.length);
+
+console.log("De la frase: '"+frase+"', la palabra más larga es: " + resultado);
+console.log("Su longitud es de: " + resultado.length+ " letras");

@@ -1,13 +1,16 @@
 const boton = document.getElementById("btnNumero");
 const error = document.getElementById("error");
 
-function determinarparoimpar(numero) {
-    if (numero % 2 == 0) {
-        console.log("Es un número par")
-        return;
+function esPrimo(num){
+    if (num <= 1) return false;
+
+    for (let i = 2; i < num; i++){
+        if(num%i===0) return false;       
     }
-    return console.log("Es un número impar")
+    return true;
 }
+
+let numerospares=[];
 
 boton.addEventListener("click", function () {
 
@@ -24,9 +27,12 @@ boton.addEventListener("click", function () {
 
         console.log("Error: debes introducir un número.");
     } else {
-
-        error.textContent = "";
-
-        determinarparoimpar(num1parseado);
+        error.textContent = ""
+        for (let i = 1; i < num1parseado; i++){
+            if(esPrimo(i)==true){
+                numerospares.push(i);
+            }
+        }
+        console.table(numerospares);
     }
-});
+})
