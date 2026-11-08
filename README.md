@@ -7,6 +7,7 @@ Un desarrollador no solo escribe código: prepara su entorno, organiza archivos,
 
 fundamentos-js/
 ├── index.html
+├── estilos.css
 ├── README.md
 ├── ejercicio-01/
 │   ├── index.html
